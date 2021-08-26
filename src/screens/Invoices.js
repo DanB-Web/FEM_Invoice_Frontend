@@ -6,8 +6,6 @@ import { getInvoices } from '../store/actions/invoiceActions'
 import InvoiceListHeader from '../components/invoiceList/InvoiceListHeader'
 import InvoiceList from '../components/invoiceList/InvoiceList'
 
-import '../styles/screens/invoices.scss'
-
 const Invoices = () => {
 
   const dispatch = useDispatch()

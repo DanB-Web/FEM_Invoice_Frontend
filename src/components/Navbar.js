@@ -1,8 +1,11 @@
-import '../styles/components/navbar.scss'
+const Navbar = ({toggleMode}) => {
 
-const Navbar = () => {
+  const modeHandler = () => {
+    toggleMode()
+  }
+
   return (
-    <nav>Navbar</nav>
+    <nav><button onClick={modeHandler}>MODE</button></nav>
   )
 }
 

@@ -1,0 +1,39 @@
+.btn {
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 1.2rem;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.deleteBtn {
+  color: #fff;
+  background-color: var(--red);
+}
+
+.deleteBtn:hover {
+  background-color: var(--lightRed);
+}
+
+.purpleBtn {
+  color: #fff;
+  background-color: var(--purple);
+}
+
+.purpleBtn:hover {
+  background-color: var(--lightPurple);
+}
+
+.infoBtn {
+  color: var(--infoBtnColor);
+  background-color: var(--infoBtnBackground);
+}
+
+.infoBtn:hover {
+  background-color: var(--infoBtnHover);
+}
+
+.darkBtn {
+}

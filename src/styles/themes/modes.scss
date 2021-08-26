@@ -1,0 +1,34 @@
+html {
+  --purple: #7c5dfa;
+  --lightPurple: #9277ff;
+  --red: #ec5757;
+  --lightRed: #ff9797;
+  --infoBtnColor: #979797;
+  --infoBtnBackground: #f9fafe;
+  --infoBtnHover: #dfe3fa;
+  --background: #f2f2f2;
+  --tile: #fff;
+  --text1: #0c0e16;
+  --text2: #7e88c3;
+  --text3: #7c5dfa;
+  --pending: #ff8f00;
+  --paid: #33d69f;
+}
+
+html[data-theme="dark"] {
+  --infoBtnColor: #dfe3fa;
+  --infoBtnBackground: #252945;
+  --infoBtnHover: #fff;
+  --background: #0c0e16;
+  --tile: #1e2139;
+  --text1: #fff;
+  --text2: #dfe3fa;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 500ms !important;
+  transition-delay: 0 !important;
+}

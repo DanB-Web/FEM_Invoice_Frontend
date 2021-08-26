@@ -1,24 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
 
+@import "./styles/reset.scss";
+
+@import "./styles/themes/modes.scss";
+@import "./styles/themes/buttons.scss";
+
+@import "./styles/screens/invoice.scss";
+@import "./styles/screens/invoices.scss";
+@import "./styles/screens/login.scss";
+
+@import "./styles/components/deleteInvoice.scss";
+@import "./styles/components/invoiceHeader.scss";
+@import "./styles/components/invoiceListHeader.scss";
+@import "./styles/components/invoiceListItem.scss";
+@import "./styles/components/navbar.scss";
+
+@import "./styles/animations/animations.scss";
+
 body {
   font-family: "Spartan", sans-serif;
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
-  overflow-y: scroll;
-}
-
-body::-webkit-scrollbar {
-  display: none; /* for Chrome, Safari, and Opera */
-}
-
-a,
-a:visited {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
 }
 
 .app-container {

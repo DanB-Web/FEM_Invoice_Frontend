@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { invoiceStatus } from '../../utils/rest'
 import DeleteInvoice from './DeleteInvoice'
-import '../../styles/components/invoiceHeader.scss'
 
 const InvoiceHeader = ({invoice}) => {
 
@@ -35,7 +34,7 @@ const InvoiceHeader = ({invoice}) => {
       <p>Status: {status}</p>
       <div>
         <button>Edit</button>
-        <button onClick={deleteModalHandler}>Delete</button>
+        <button className='btn deleteBtn' onClick={deleteModalHandler}>Delete</button>
         {statusError ? 
           <p>Error updating status</p> :
           <div>
