@@ -13,7 +13,6 @@ export const getInvoicesReducer = (state = {}, action) => {
     case GET_INVOICES_SUCCESS:
       return {
         loading: false,
-        success: true,
         invoices: action.payload
       }
     case GET_INVOICES_FAILURE:

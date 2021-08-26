@@ -1,6 +1,8 @@
+import '../styles/screens/login.scss'
+
 const Login = () => {
   return (
-    <div>Login</div>
+    <div className='login-container'>Login</div>
   )
 }
 

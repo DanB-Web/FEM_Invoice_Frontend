@@ -15,7 +15,7 @@ function App() {
 
   if (!userAuth) {
     return (
-      <div className="App">
+      <div className="app-container">
         <Login></Login>
       </div>
     );
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
+      <div className="app-container">
         <Navbar/>
         <Switch>
           <Route path="/" exact component={Invoices}/>

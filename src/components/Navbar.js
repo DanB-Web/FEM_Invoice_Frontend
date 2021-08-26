@@ -1,6 +1,8 @@
+import '../styles/components/navbar.scss'
+
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <nav>Navbar</nav>
   )
 }
 
