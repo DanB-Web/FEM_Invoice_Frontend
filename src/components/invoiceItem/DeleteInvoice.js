@@ -31,17 +31,21 @@ const DeleteModal = ({history, setDeleteModal, id}) => {
     <div className='delete-invoice-container'>
       {deleteLoading ?
         <div className='delete-invoice-loader'>
-          <BeatLoader size={25} color={`#9277FF`}></BeatLoader>
+          <BeatLoader size={25} color={`#7e88c3`}></BeatLoader>
         </div> :
         <div className='delete-invoice'>
-        {!deleteError ? <p>Confirm delete {id}</p> : null}
+        {!deleteError ? <div><h2>Confirm Deletion</h2><p>Are you sure you want to delete {id}? This action cannot be undone</p></div> : null}
         {deleteError ? <p>Delete error...</p> : null}
-        <button className='btn infoBtn' onClick={closeModalHandler}>Cancel</button>
-        {!deleteError ? <button className='btn deleteBtn' onClick={deleteHandler}>Delete</button> : null}
+        <div className='delete-invoice-buttons'>
+          <button className='btn infoBtn' onClick={closeModalHandler}>Cancel</button>
+          {!deleteError ? <button className='btn deleteBtn' onClick={deleteHandler}>Delete</button> : null}
+        </div>
+        
       </div>
       }
     </div>
   )
 }
+
 
 export default withRouter(DeleteModal)

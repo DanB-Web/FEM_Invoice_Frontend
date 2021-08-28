@@ -2,12 +2,41 @@
   position: fixed;
   display: flex;
   justify-content: center;
+  align-items: center;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.75);
   z-index: 5;
+  .delete-invoice {
+    width: 30rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    background-color: var(--tile);
+    border-radius: 0.4rem;
+    p {
+      color: var(--text2);
+    }
+    .delete-invoice-buttons {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      button {
+        margin-left: 1rem;
+      }
+    }
+  }
   .delete-invoice-loader {
+    width: 30rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    background-color: var(--tile);
+    border-radius: 0.4rem;
   }
 }
