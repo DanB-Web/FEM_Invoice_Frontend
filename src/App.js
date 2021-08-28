@@ -41,7 +41,7 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-        <Navbar toggleMode={toggleMode}/>
+        <Navbar mode={mode} toggleMode={toggleMode}/>
         <Switch>
           <Route path="/" exact component={Invoices}/>
           <Route path="/invoice/:id" component={Invoice}/>
