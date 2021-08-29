@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { getInvoices } from '../store/actions/invoiceActions'
@@ -11,15 +11,20 @@ const Invoices = () => {
   const dispatch = useDispatch()
 
   const { loading, error, invoices } = useSelector(state => state.invoices)
+  const[filterView, setFilterView] = useState([])
 
   useEffect(() => {
     dispatch(getInvoices())
   }, [dispatch])
 
+  useEffect(() => {
+    setFilterView(invoices)
+  }, [invoices])
+
   return (
     <div className='invoices-container'>
-      <InvoiceListHeader/>
-      <InvoiceList invoices={invoices} loading={loading} error={error}/>
+      <InvoiceListHeader filterView={filterView}/>
+      <InvoiceList filterView={filterView} loading={loading} error={error}/>
     </div>
   )
 }

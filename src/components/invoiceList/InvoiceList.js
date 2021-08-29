@@ -1,6 +1,6 @@
 import InvoiceListItem from './InvoiceListItem'
 
-const InvoiceList = ({invoices, loading, error}) => {
+const InvoiceList = ({filterView, loading, error}) => {
 
   if (loading) return (
     <div>Loading...</div>
@@ -10,14 +10,14 @@ const InvoiceList = ({invoices, loading, error}) => {
     <div>Error...</div>
   )
 
-  if (invoices && invoices.length === 0) return (
+  if (filterView && filterView.length === 0) return (
     <div>No invoices...</div>
   )
 
-  if (invoices) return (
+  if (filterView) return (
     <div>
     <ul>
-    {invoices.map(invoice => (
+    {filterView.map(invoice => (
         <InvoiceListItem key={invoice.id} invoice={invoice}/>
       ))}
     </ul>

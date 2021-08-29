@@ -1,6 +1,8 @@
 .invoices-container {
-  border: 1px solid green;
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding-top: 5rem;
+  padding-left: calc(22rem - 6.5rem); //Minus navbar
+  padding-right: 22rem;
 }
